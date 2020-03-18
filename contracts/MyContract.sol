@@ -4,6 +4,7 @@ import "./ERC721.sol";
 
 contract MyContract is ERC721{
     address payable private contractOwner;
+    uint public animalCount = 0;
 
     struct animal{
         string race;
@@ -14,7 +15,7 @@ contract MyContract is ERC721{
     }
 
     event addBreeder (address breeder);
-    mapping(address=>bool)public allowedBreeder;
+    mapping(address => bool) public allowedBreeder;
 
     animal[] private animalArray;
     address[] private breederArray;
@@ -50,6 +51,8 @@ contract MyContract is ERC721{
     function declareAnimal(string memory race, uint256 age, string memory ville,string memory color, string memory name) public {
         require(isRegistered(msg.sender) == true, "You'r not allowed to declare your animal");
         animalArray.push(animal(race, age, ville, color, name));
+        animalCount++;
+        //animalArray[animalCount] = animal(race, age, ville, color, name);
         _mint(msg.sender, (animalArray.length-1));
     }
 

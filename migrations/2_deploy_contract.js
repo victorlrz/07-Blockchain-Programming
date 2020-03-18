@@ -1,4 +1,4 @@
-var MyContract = artifacts.require("MyContract");
+var MyContract = artifacts.require("./MyContract");
 
 module.exports = function(deployer) {
   deployer.deploy(MyContract);
