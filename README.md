@@ -6,9 +6,9 @@ L'ensemble des codes se trouve ensuite dans "\my-app\src\App.js" et "\my-app\src
 
 Pour réaliser les différentes pages, nous avons utilisé react-router. 
 Nous avons ensuite déployé le contrat en suivant ces étapes :
- *truffle networks --ganache
- *let instance = await MyContract.deployed()
- *let account = web3.eth.getAccounts()
+ * truffle networks --ganache  
+ * let instance = await MyContract.deployed()  
+ * let account = web3.eth.getAccounts()  
 
 Il faut bien récupérer l'addresse du contrat et son API pour déployer correctement le contrat sur React avec web3JS.
 
