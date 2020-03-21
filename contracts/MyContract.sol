@@ -5,6 +5,7 @@ import "./ERC721.sol";
 contract MyContract is ERC721{
     address payable private contractOwner;
     uint public animalCount = 0;
+    string public tokenName = "VBL";
 
     struct animal{
         string race;
@@ -20,14 +21,14 @@ contract MyContract is ERC721{
     animal[] private animalArray;
     address[] private breederArray;
 
-    constructor()public{
+    constructor() public{
         contractOwner = msg.sender;
     }
     modifier ownerOfContract(){
         require(msg.sender == contractOwner,"Must be the owner of the contract");
         _;
     }
-
+    
     function registerBreeder(address breeder) public ownerOfContract {
         breederArray.push(breeder);
         allowedBreeder[breeder] = true;
@@ -54,6 +55,14 @@ contract MyContract is ERC721{
         animalCount++;
         //animalArray[animalCount] = animal(race, age, ville, color, name);
         _mint(msg.sender, (animalArray.length-1));
+    }
+
+    function _balanceOf(address breeder) public view returns (uint256) {
+        return balanceOf(breeder);
+    }
+
+    function _ownerOf(uint256 tokenId) public view returns (address){
+        ownerOf(tokenId);
     }
 
 }

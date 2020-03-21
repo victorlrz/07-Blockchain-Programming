@@ -519,10 +519,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1481,
-                        1482
+                        1508,
+                        1509
                       ],
-                      "referencedDeclaration": 1482,
+                      "referencedDeclaration": 1509,
                       "src": "1574:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1175,10 +1175,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1481,
-                        1482
+                        1508,
+                        1509
                       ],
-                      "referencedDeclaration": 1482,
+                      "referencedDeclaration": 1509,
                       "src": "1574:7:3",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1351,7 +1351,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-03-18T16:40:50.751Z",
+  "updatedAt": "2020-03-21T21:44:40.619Z",
   "devdoc": {
     "details": "Implementation of the {IERC165} interface.  * Contracts may inherit from this and call {_registerInterface} to declare their support of an interface.",
     "methods": {

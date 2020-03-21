@@ -657,7 +657,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1492,
+                                "referencedDeclaration": 1519,
                                 "src": "2746:4:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Address_$77",
@@ -778,10 +778,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1481,
-                        1482
+                        1508,
+                        1509
                       ],
-                      "referencedDeclaration": 1482,
+                      "referencedDeclaration": 1509,
                       "src": "2730:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1021,10 +1021,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1481,
-                        1482
+                        1508,
+                        1509
                       ],
-                      "referencedDeclaration": 1482,
+                      "referencedDeclaration": 1509,
                       "src": "2956:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -1790,7 +1790,7 @@
                                 "name": "this",
                                 "nodeType": "Identifier",
                                 "overloadedDeclarations": [],
-                                "referencedDeclaration": 1492,
+                                "referencedDeclaration": 1519,
                                 "src": "2746:4:0",
                                 "typeDescriptions": {
                                   "typeIdentifier": "t_contract$_Address_$77",
@@ -1911,10 +1911,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1481,
-                        1482
+                        1508,
+                        1509
                       ],
-                      "referencedDeclaration": 1482,
+                      "referencedDeclaration": 1509,
                       "src": "2730:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2154,10 +2154,10 @@
                       "name": "require",
                       "nodeType": "Identifier",
                       "overloadedDeclarations": [
-                        1481,
-                        1482
+                        1508,
+                        1509
                       ],
-                      "referencedDeclaration": 1482,
+                      "referencedDeclaration": 1509,
                       "src": "2956:7:0",
                       "typeDescriptions": {
                         "typeIdentifier": "t_function_require_pure$_t_bool_$_t_string_memory_ptr_$returns$__$",
@@ -2280,7 +2280,7 @@
   },
   "networks": {},
   "schemaVersion": "3.0.23",
-  "updatedAt": "2020-03-18T16:40:50.745Z",
+  "updatedAt": "2020-03-21T21:44:40.613Z",
   "devdoc": {
     "details": "Collection of functions related to the address type",
     "methods": {}

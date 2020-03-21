@@ -1,36 +1,32 @@
 import React, { Component } from 'react';
 import './App.css';
-import Web3 from "web3";
-import { HelpBlock } from 'react-bootstrap';
+import {BrowserRouter as Router, Route,Switch, Link, Redirect } from "react-router-dom";
 
-class App extends Component {
-  componentWillMount(){
-    this.loadBlockchainData()
-  }
+//Pages
+import MainPage from "./Pages/MainPage.jsx";
+import NotFoundPage from "./Pages/404.jsx";
+import Characteristics from "./Pages/Charac.jsx";
+import TokenNumber from "./Pages/TokenNumber.jsx"
+import ownerOf from "./Pages/ownerOf.jsx"
 
-  async loadBlockchainData(){
-    const web3 = new Web3(Web3.givenProvider || "http://127.0.0.:7545")
-    const network = await web3.eth.net.getNetworkType()
-    const accounts = await web3.eth.getBlockNumber().then(console.log)
-    this.setState({network: network})
-    //this.setState({account: account[0]})
-
-    //Fetch account
-  }
-  constructor(props){
-    super(props)
-    this.state = { network: ""}
-    
-  }
-
-  render(){
-    return (
-      <div className="Container">
-        <h1>Hello world !</h1>
-        <p>Your network: {this.state.network} </p>
-      </div>
+class App extends Component{
+  
+  render() {
+    return ( 
+    <Router>
+      <Switch>
+      <Route exact path ="/" component ={ MainPage } />
+      <Route exact path = "/404" component = {NotFoundPage} />
+      <Route exact path = "/characteristics" component = {Characteristics} />
+      <Route exact path = "/token-number" component = {TokenNumber} />
+      <Route exact path = "/ownerof" component = {ownerOf} />
+      <Redirect to = "/404"/> 
+      </Switch>
+    </Router>
     );
   }
 }
-
+//mettre les chemins dans des variables (path)
 export default App;
+
+
